@@ -1,0 +1,67 @@
+# Build artifacts
+*.log
+*.zip
+*.tar.gz
+*.rar
+
+# IDE files
+.idea/
+*.iml
+
+# Temporary files
+*.tmp
+*.swp
+
+# Compiled files
+*.class
+*.pyc
+
+# Test files
+test/
+tests/
+
+# Configuration files
+config.py
+settings.py
+
+# Database files
+*.db
+*.sqlite
+
+# Logs
+logs/
+
+# Other files
+.DS_Store
+Thumbs.db
+
+
+node_modules/
+.env
+
+
+# FRONTEND
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

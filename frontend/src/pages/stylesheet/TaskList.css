@@ -1,0 +1,107 @@
+.task-list-container {
+  font-family: sans-serif;
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  padding: 40px 90px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+}
+
+.task-list-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task .title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.task .description {
+  color: #555;
+}
+
+.task .due-date {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.task .status {
+  font-size: 0.9em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.task button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-end;
+}
+
+.task button:hover {
+  background-color: #0056b3;
+}
+
+.task-list-container > .task-list > button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.task-list-container > .task-list > button:hover {
+  background-color: #218838;
+}
+
+/* Material UI Modal Styling */
+.modal-container { /* You can add a container for more control */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiModal-root .MuiBackdrop-root { /* Target the backdrop */
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.MuiModal-root .MuiBox-root { /* Target the modal content box */
+  background-color: white;
+  border-radius: 8px;
+  outline: none; /* Remove default outline */
+  padding: 20px;
+  min-height: 300px;
+  width: 500px;
+  min-width: 250px;
+}
+
+.MuiModal-root .MuiTypography-h6 { /* Style the modal title */
+  margin-bottom: 15px;
+}

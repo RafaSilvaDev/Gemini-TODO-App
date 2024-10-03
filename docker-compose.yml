@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3003:3003"
+    depends_on:
+      - mongodb
+    environment:
+      - DB_NAME=TodoDB
+      - TODOS_COLLECTION_NAME=todos
+      - USERS_COLLECTION_NAME=users
+      - JWT_SECRET=default-secret-key
+      - MONGODB_URI=mongodb://mongodb:27017
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    command: mongod --bind_ip_all
